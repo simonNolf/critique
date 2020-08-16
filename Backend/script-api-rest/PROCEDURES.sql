@@ -110,3 +110,33 @@ BEGIN
     call sa_set_http_header('Content-Type', 'image/png');
 	select xp_read_file(dba.getPath() || 'IMG/' || url);
 END;
+
+/*procédure liste*/
+CREATE PROCEDURE DBA."getliste"()
+RESULT (groupeid int, lib varchar(20))
+BEGIN
+	SELECT*from groupe
+END;
+
+/*tri en fonction du type*/
+CREATE PROCEDURE DBA."tri"(IN groupeid int)
+RESULT (json text)
+BEGIN 
+	DECLARE @groupe varchar(20);
+	SET @groupe = SELECT lib from groupe where groupeid = idNumber;
+	SELECT * from @groupe for json raw;
+END;
+
+CREATE PROCEDURE "DBA"."chercheLivre"()
+result (livreId varchar(10), titrelivre varchar(50), auteur varchar(30)pages int, tomes int, suite VARCHAR(3), pages_suite int, tomes_suite int)
+begin
+	select *
+	from livre;
+end;
+
+CREATE PROCEDURE "DBA"."chercheFilm"()
+result (filmid VARCHAR(10), titrefilm varchar(50), auteur varchar(20), duree int, suite varchar(3), film_suite int, duree_suite int)
+begin
+	select *
+	from film;
+end;
