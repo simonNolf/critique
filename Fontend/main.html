@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<head>
+<head xmlns="http://www.w3.org/1999/html">
     <meta charset="utf-8">
     <title>Liste de film et de livre</title>
     <link rel="stylesheet" href="css/style.css">
@@ -10,23 +10,8 @@
 <header>
     Bienvenue sur le site de comparaison de livre et de film
 </header>
-<table>
-    <tr>Titre livre
-        <td>image livre</td>
-        <td>résumé livre</td>
-        <td>pric le moins cher</td>
-    </tr></br>
-    <tr>Autre livre
-        <td>image livre</td>
-        <td>résumé livre</td>
-        <td>pric le moins cher</td>
-        <td>club</td>
-        <td>amazon</td>
-        <td>fnac  </td>
-    </tr></br>
-    <tr>
-        <td></td>
-        <td>2</td>
-    </tr>
-</table>
+<p>Voulez-vous voir la table des livres?<button onclick="listeLivre();"> afficher les livres</button> </p>
+<div id="listelivre"></div>
+<p>voulez-vous voir la table des films?<button onclick="listeFilm();">afficher les films</button> </p>
+<div id="listeFilm"></div>
 </body>
