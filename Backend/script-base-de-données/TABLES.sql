@@ -49,7 +49,6 @@ INSERT INTO film(filmid, titrefilm, auteur, duree, suite, film_suite, duree_suit
 INSERT INTO livre(livreid, titrelivre, auteur, pages, tomes, suite, pages_suite, tomes_suite) values
 ('A', 'after', 'Anna Todd', 3718, 5, 'non', 0, 0),
 ('CE', 'Les chevaliers d''émeraudes', 'Anne Robillard', 4719, 12, 'oui', 12742, 24),
-('HP', 'Harry Potter', 'J.K.Rowling', 4496, 7, 'non', 0, 0),
 ('HB', 'Le Hobbit', 'J.R.R.Toklien', 310, 1, 'oui', 1526, 3),
 ('BP', 'les bannis et les Proscrits', 'James Clemens', 3804, 5, 'non', 0, 0),
 ('AR', 'L''apprendti d''Araluen', 'John Flanagan', 4970, 12, 'oui', 5834, 2),

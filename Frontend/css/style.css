@@ -69,45 +69,10 @@ section {
     padding: 10px;
 }
 
-/*NAVBAR*/
 body {
     margin: 0;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-}
-
-.navbar a {
-    float: right;
-    font-size: 16px;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar a:first-child {
-    float: left;
-}
-
-.dropdown {
-    float: right;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: dimgray;
-}
 
 .dropdown_content {
     display: none;
@@ -172,19 +137,6 @@ button, input[type="submit"] {
 	margin: 5px auto;
     display: block;
 }
-.profile img {
-	display: block;
-	margin: auto;
-	border:black 2px solid;
-	margin-bottom: 4px;
-}
-.profile .icon {
-	height: 1rem;
-	width: auto;
-	display: inline;
-	border: 0;
-	margin: 0;
-}
 
 section#druide {
     text-align: center;
@@ -196,15 +148,20 @@ section#druide {
     margin: 40%;
 }
 
-/*#barde {
-    background-image: url("../IMG/bardeIndex.jpg");
-    float: right;
-}*/
-
 h1#hIndex {
     text-align: center;
 }
 
 #listeTable {
     margin: 30px auto;
+}
+#titre{
+    text-align: justify;
+    font-weight: bold;s
+}
+.ok{
+    background-color: #73FF3E;
+}
+.non{
+    background-color: #FF0202;
 }
